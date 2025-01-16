@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking - Taniti Travel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Taniti Logo">
+            <h1>Taniti Travel</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="booking">
+            <h2>Book Your Stay</h2>
+            <p>Fill out the form below to book your stay in paradise.</p>
+
+            <form onsubmit="return validateBookingForm();">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="dates">Check-in Date:</label>
+                <input type="date" id="dates" name="dates" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" placeholder="Number of Guests" required>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Taniti Travel. All rights reserved.</p>
+        <ul>
+            <li><a href="https://facebook.com">Facebook</a></li>
+            <li><a href="https://twitter.com">Twitter</a></li>
+            <li><a href="https://instagram.com">Instagram</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
